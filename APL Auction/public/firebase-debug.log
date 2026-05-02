@@ -1,0 +1,54 @@
+[debug] [2026-05-02T13:39:50.291Z] ----------------------------------------------------------------------
+[debug] [2026-05-02T13:39:50.305Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\shaur\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-05-02T13:39:50.305Z] CLI Version:   15.16.0
+[debug] [2026-05-02T13:39:50.305Z] Platform:      win32
+[debug] [2026-05-02T13:39:50.306Z] Node Version:  v24.11.1
+[debug] [2026-05-02T13:39:50.306Z] Time:          Sat May 02 2026 19:09:50 GMT+0530 (India Standard Time)
+[debug] [2026-05-02T13:39:50.306Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-05-02T13:39:56.323Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-02T13:39:56.324Z] > authorizing via signed-in user (jonathanholmesofficials@gmail.com)
+[debug] [2026-05-02T13:39:56.324Z] [iam] checking project apl-auction-c53a2 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-05-02T13:39:56.326Z] Checked if tokens are valid: true, expires at: 1777732747660
+[debug] [2026-05-02T13:39:56.326Z] Checked if tokens are valid: true, expires at: 1777732747660
+[debug] [2026-05-02T13:39:56.328Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/apl-auction-c53a2:testIamPermissions [none]
+[debug] [2026-05-02T13:39:56.328Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/apl-auction-c53a2:testIamPermissions  x-goog-user-project=apl-auction-c53a2
+[debug] [2026-05-02T13:39:56.328Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/apl-auction-c53a2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-05-02T13:39:57.949Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/apl-auction-c53a2:testIamPermissions 200
+[debug] [2026-05-02T13:39:57.949Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/apl-auction-c53a2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-05-02T13:39:57.951Z] Checked if tokens are valid: true, expires at: 1777732747660
+[debug] [2026-05-02T13:39:57.952Z] Checked if tokens are valid: true, expires at: 1777732747660
+[debug] [2026-05-02T13:39:57.953Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/apl-auction-c53a2 [none]
+[debug] [2026-05-02T13:39:58.366Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/apl-auction-c53a2 200
+[debug] [2026-05-02T13:39:58.366Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/apl-auction-c53a2 {"projectId":"apl-auction-c53a2","projectNumber":"18634298806","displayName":"APL Auction","name":"projects/apl-auction-c53a2","resources":{"hostingSite":"apl-auction-c53a2"},"state":"ACTIVE","etag":"1_d71fb8cb-47c3-48ff-93dc-2574f4c0539a"}
+[info] 
+[info] === Deploying to 'apl-auction-c53a2'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-05-02T13:39:58.402Z] Checked if tokens are valid: true, expires at: 1777732747660
+[debug] [2026-05-02T13:39:58.402Z] Checked if tokens are valid: true, expires at: 1777732747660
+[debug] [2026-05-02T13:39:58.404Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/apl-auction-c53a2/sites/apl-auction-c53a2 [none]
+[debug] [2026-05-02T13:39:59.674Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/apl-auction-c53a2/sites/apl-auction-c53a2 200
+[debug] [2026-05-02T13:39:59.675Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/apl-auction-c53a2/sites/apl-auction-c53a2 {"name":"projects/apl-auction-c53a2/sites/apl-auction-c53a2","defaultUrl":"https://apl-auction-c53a2.web.app","appId":"1:18634298806:web:e6ea9d2b794f8dca9b9d17","type":"DEFAULT_SITE"}
+[debug] [2026-05-02T13:39:59.680Z] Checked if tokens are valid: true, expires at: 1777732747660
+[debug] [2026-05-02T13:39:59.680Z] Checked if tokens are valid: true, expires at: 1777732747660
+[debug] [2026-05-02T13:39:59.681Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/apl-auction-c53a2/versions [none]
+[debug] [2026-05-02T13:39:59.681Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/apl-auction-c53a2/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-05-02T13:40:00.932Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/apl-auction-c53a2/versions 200
+[debug] [2026-05-02T13:40:00.933Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/apl-auction-c53a2/versions {"name":"projects/18634298806/sites/apl-auction-c53a2/versions/5703cabf17d8be82","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[apl-auction-c53a2]: beginning deploy... 
+[info] i  hosting[apl-auction-c53a2]: found 308837 files in . 
+[debug] [2026-05-02T13:42:33.970Z] [hosting] uploading with 200 concurrency
+[debug] [2026-05-02T13:42:34.002Z] [hosting] hash cache [] not populated
+[debug] [2026-05-02T13:42:34.314Z] Error: EBUSY: resource busy or locked, open 'C:\Users\shaur\ntuser.dat.LOG2'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-05-02T13:42:34.335Z] Error: EBUSY: resource busy or locked, open 'C:\Users\shaur\ntuser.dat.LOG1'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-05-02T13:42:34.344Z] Error: EBUSY: resource busy or locked, open 'C:\Users\shaur\NTUSER.DAT'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-05-02T13:42:34.462Z] Error: EISDIR: illegal operation on a directory, read
+[error] 
+[error] Error: An unexpected error has occurred.
